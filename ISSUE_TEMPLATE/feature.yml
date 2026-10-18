@@ -1,0 +1,27 @@
+name: Feature
+description: New or changed behaviour that a user can see
+type: Feature
+projects: ["SteamWiz/2"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or goal
+      description: What you want to do and why. What's awkward or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Optional. How it might work (command, option, config, example output).
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Optional. Observable outcomes that would show it works. The planner turns these into acceptance criteria.
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Not part of this
+      description: Optional. Anything this should explicitly not cover.

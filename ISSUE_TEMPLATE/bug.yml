@@ -1,0 +1,34 @@
+name: Bug
+description: Something is broken or behaves unexpectedly
+type: Bug
+projects: ["SteamWiz/2"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: The command you ran and what you saw (paste the output or error).
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How to reproduce
+      description: Steps, input files or config needed to see it again. "Happened once" is fine too.
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `<app> --version`, if you have it.
+  - type: textarea
+    id: done
+    attributes:
+      label: Fixed when
+      description: Optional. What would show this is fixed? The planner turns this into acceptance criteria.

@@ -1,0 +1,16 @@
+name: Task
+description: Chore, docs, dependency or CI work, refactor, or a spec/decision to make
+type: Task
+projects: ["SteamWiz/2"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What and why
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      description: Optional. Observable outcomes. The planner turns these into acceptance criteria.
